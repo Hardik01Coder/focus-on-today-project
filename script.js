@@ -33,7 +33,7 @@ const goalContainer = document.querySelectorAll('.goal-container')
   }
   
   allCheckBoxes.forEach((checkbox, i) => {
-    goalContainer[i].addEventListener('click', () => {
+    checkbox.addEventListener('click', () => {
       const allInputsFilled = [...allGoalInputs].every((goalInput) => goalInput.value)
       
       if (allInputsFilled) {
